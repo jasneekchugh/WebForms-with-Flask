@@ -1,33 +1,33 @@
 {% extends "layout.html" %}
 {% block content %}
-<form action="/edit/{{city.id}}" method="post">
+<form action="/edit/{{award.index}}" method="post">
     <div class="row">
         <div class="col">
-            <label for="fldsrno">Sr. No.</label>
-            <input id="fldsrno" type="text" class="form-control" placeholder="Sr. No." name="fldsrno" value="{{city.fldsrno}}">
+            <label for="index">Sr. No.</label>
+            <input id="index" type="text" class="form-control" placeholder="index" name="index"
+                   value="{{award.index}}">
         </div>
         <div class="col">
-            <label for="fldYear">Year</label>
-            <input id="fldYear" type="text" class="form-control" placeholder="Year"
-                   name="fldYear" value="{{city.fldYear}}">
+            <label for="year">year</label>
+            <input id="year" type="text" class="form-control" placeholder="year"
+                   name="year" value="{{award.year}}">
         </div>
         <div class="col">
-            <label for="fldAge">Age</label>
-            <input id="fldAge" type="text" class="form-control" placeholder="Age" name="fldAge" value="{{city.fldAge}}">
+            <label for="age">age</label>
+            <input id="age" type="text" class="form-control" placeholder="age" name="age"
+                   value="{{award.age}}">
         </div>
     </div>
-
     <div class="row">
         <div class="col">
-            <label for="fldName">Name</label>
-            <input id="fldName" type="text" class="form-control" placeholder="City Latitude" name="fldName" value="{{city.fldName}}">
+            <label for="name">name</label>
+            <input id="name" type="text" class="form-control" placeholder="name"
+                   name="name" value="{{award.name}}">
         </div>
         <div class="col">
-            <label for="fldMovie">Movie</label>
-            <input id="fldMovie" type="text" class="form-control" placeholder="City Longitude" name="fldMovie" value="{{city.fldMovie}}">
-        </div>
-    </div>
-
+            <label for="movie">movie</label>
+            <input id="movie" type="text" class="form-control" placeholder="movie" name="movie"
+                   value="{{award.movie}}">
         </div>
     </div>
     <button type="submit" class="btn btn-success">Save</button>
