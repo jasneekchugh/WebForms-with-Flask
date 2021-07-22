@@ -1,3 +1,4 @@
+
 {% extends "layout.html" %}
 {% block content %}
 <table class="table">
@@ -8,16 +9,17 @@
         <th scope="col">Age</th>
         <th scope="col">Name</th>
         <th scope="col">Movie</th>
+
     </tr>
     </thead>
     <tbody>
-    {% for city in cities %}
+    {% for award in Names %}
     <tr>
-        <td><a href="view/{{city.id}}">{{ city.fldsrno }}</a></td>
-        <td>{{ city.fldYear }}</td>
-        <td>{{ city.fldAge }}</td>
-        <td>{{ city.fldName }}</td>
-        <td>{{ city.fldMovie }}</td>
+        <td><a href="view/{{award.name}}">{{ award.index }}</a></td>
+        <td>{{ award.year }}</td>
+        <td>{{ award.age }}</td>
+        <td>{{ award.name }}</td>
+        <td>{{ award.movie }}</td>
     </tr>
     {% endfor %}
     </tbody>
