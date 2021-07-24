@@ -8,7 +8,6 @@ CREATE TABLE IF NOT EXISTS male (
     `name` VARCHAR(25) CHARACTER SET utf8,
     `movie` VARCHAR(34) CHARACTER SET utf8
 );
-
 INSERT INTO male VALUES
     (1,1928,44,' "Emil Jannings"',' "The Last Command'),
     (2,1929,41,' "Warner Baxter"',' "In Old Arizona"'),
